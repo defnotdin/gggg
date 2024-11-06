@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Mockup</title>
+    <link rel="stylesheet" href="white.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            🍏 <!-- Логотип яблока -->
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#mac">Mac</a></li>
+                <li><a href="#ipad">iPad</a></li>
+                <li><a href="#iphone">iPhone</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h1 class="title-glow">iPhone 16</h1>
+        <h2 class="subtitle-glow">New</h2>
+        <div class="main-image">
+            <img src="./iphone16.png" alt="Main iPhone Image" class="iphone-image">
+        </div>
+        <div class="instructions">
+            Discover a versatile device designed for stunning photography, immersive video, and seamless connectivity.
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="store-photo">
+            <img src="path/to/store-photo.jpg" alt="Store Photo">
+        </div>
+    </footer>
+    
+    <div class="image-gallery">
+        <div class="iphone-color blue">
+            <img src="./iphone16blue.png" alt="iPhone 16 Blue" class="iphone-thumbnail">
+            <p>Blue</p>
+            <p class="price">$999</p> <!-- Примерная цена для синего iPhone -->
+        </div>
+        <div class="iphone-color green">
+            <img src="./iphone16green.png" alt="iPhone 16 Green" class="iphone-thumbnail">
+            <p>Green</p>
+            <p class="price">$999</p> <!-- Примерная цена для зеленого iPhone -->
+        </div>
+        <div class="iphone-color white">
+            <img src="./iphone16white.png" alt="iPhone 16 White" class="iphone-thumbnail">
+            <p>White</p>
+            <p class="price">$999</p> <!-- Примерная цена для белого iPhone -->
+        </div>
+        <div class="iphone-color black">
+            <img src="./iphone16black.png" alt="iPhone 16 Black" class="iphone-thumbnail">
+            <p>Black</p>
+            <p class="price">$999</p> <!-- Примерная цена для черного iPhone -->
+        </div>
+    </div>
+    
+    <script>
+        // Определяем цвета для каждого типа iPhone
+        const colors = {
+            blue: 'blue',
+            green: 'green',
+            white: 'white',
+            black: 'black'
+        };
+
+        // Получаем все элементы с классом iphone-color
+        const iphoneColors = document.querySelectorAll('.iphone-color');
+
+        // Добавляем обработчик событий для каждого элемента
+        iphoneColors.forEach(color => {
+            color.addEventListener('click', function() {
+                // Убираем класс active у всех элементов
+                iphoneColors.forEach(c => {
+                    c.classList.remove('active');
+                    c.querySelector('p').style.color = 'rgba(255, 255, 255, 0.7)'; // Сбрасываем цвет текста
+                });
+
+                // Добавляем класс active к текущему элементу
+                this.classList.add('active');
+                
+                // Получаем цвет из класса элемента и меняем цвет текста
+                const currentColor = this.classList[1]; // Получаем второй класс (blue, green и т.д.)
+                this.querySelector('p').style.color = colors[currentColor]; // Меняем цвет текста на соответствующий
+            });
+        });
+    </script>
+   
+    <div class="camera-container">
+        <div class="camera-image-text">
+            <h1 class="camera-title">Take Total Camera Control</h1>
+            <div class="specs-container">
+                <p class="spec">16MP Main</p>
+                <p class="spec">12MP Ultra Wide</p>
+                <p class="spec">12MP Telephoto</p>
+            </div>
+            <div class="camera-description">
+                <p>The versatile new iPhone 16 camera system captures beautiful photos — from up close or far away. The two-in-one 48MP Fusion camera lets you take stunning super-high-resolution images, or zoom in with the 2x optical-quality Telephoto. The Ultra Wide camera shoots extreme close-up macro photos or wider, more expansive pictures. Altogether, it’s like having four lenses in your pocket. And with spatial capture, you can even take photos and videos in 3D, which you can watch with Apple Vision Pro.</p>
+            </div>
+            <p class="touch-zoom">Touch. Zoom. Click. Quick.</p> <!-- Объединенный текст -->
+        </div>
+        <img src="./iphone16above.png" alt="iPhone 16 Camera" />
+    </div>
+</body>
+</html>

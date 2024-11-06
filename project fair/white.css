@@ -1,0 +1,106 @@
+body {
+    background-color: white; /* Установлен белый фон для всего документа */
+    color: black; /* Установлен черный цвет текста */
+    font-family: Arial, sans-serif; /* Установлен шрифт для всего документа */
+    margin: 0; /* Убраны отступы */
+    padding: 0; /* Убраны внутренние отступы */
+}
+
+.header {
+    background-color: white; /* Белый фон для заголовка */
+    padding: 10px; /* Отступы в заголовке */
+    border-bottom: 1px solid #ccc; /* Линия внизу заголовка */
+}
+
+.nav ul {
+    list-style-type: none; /* Убраны маркеры списка */
+    padding: 0; /* Убраны внутренние отступы */
+}
+
+.nav li {
+    display: inline; /* Ссылки отображаются в одну строку */
+    margin-right: 20px; /* Отступ между ссылками */
+}
+
+.nav a {
+    color: black; /* Цвет текста для ссылок в навигации */
+    text-decoration: none; /* Убрано подчеркивание */
+}
+
+.container {
+    text-align: center; /* Центрирование текста в контейнере */
+    padding: 20px; /* Отступы в основном контейнере */
+    background-color: white; /* Белый фон для основного контейнера */
+}
+
+.title-glow,
+.subtitle-glow {
+    color: black; /* Цвет заголовка и подзаголовка */
+    text-shadow: 0 0 10px pink; /* Эффект розового глоу для заголовка */
+}
+
+.instructions {
+    color: black; /* Цвет текста инструкции */
+    margin-top: 10px; /* Отступ сверху для инструкции */
+}
+
+.footer {
+    background-color: white; /* Белый фон для подвала */
+    text-align: center; /* Центрирование текста в подвале */
+    padding: 20px; /* Отступы в подвале */
+}
+
+.image-gallery {
+    display: flex; /* Используется flexbox для расположения элементов */
+    justify-content: center; /* Центрирование элементов */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку */
+    margin-top: 20px; /* Отступ сверху для галереи изображений */
+    background-color: white; /* Белый фон для галереи изображений */
+}
+
+.iphone-color {
+    margin: 10px; /* Отступы между элементами галереи */
+    text-align: center; /* Центрирование текста внутри элемента */
+    border: 2px solid transparent; /* Прозрачная рамка для активного состояния */
+    transition: border-color 0.3s; /* Плавный переход цвета рамки */
+    background-color: white; /* Белый фон для каждого элемента iPhone */
+}
+
+.iphone-thumbnail {
+    width: 80px; /* Уменьшена ширина миниатюры */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.price {
+    color: black; /* Цвет цены */
+}
+
+.camera-container {
+    text-align: center; /* Центрирование текста в контейнере камеры */
+    margin-top: 20px; /* Отступ сверху для контейнера камеры */
+    background-color: white; /* Белый фон для контейнера камеры */
+}
+
+.camera-title {
+    color: black; /* Цвет заголовка камеры */
+    text-shadow: 0 0 10px pink; /* Эффект розового глоу для заголовка камеры */
+}
+
+.specs-container {
+    margin-top: 10px; /* Отступ сверху для контейнера спецификаций */
+}
+
+.spec {
+    color: black; /* Цвет спецификаций */
+}
+
+.camera-description {
+    margin: 10px 0; /* Отступы сверху и снизу для описания камеры */
+}
+
+.touch-zoom {
+    color: black; /* Цвет текста "Touch. Zoom. Click. Quick." */
+    font-weight: bold; /* Жирный текст */
+}
+
+/* Стиль для активного
